@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${jdbc_url}
+    username: ${jdbc_username}
+    password: ${jdbc_password}
+    driver-class-name: ${jdbc_driver}
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa:
+    show-sql: true
