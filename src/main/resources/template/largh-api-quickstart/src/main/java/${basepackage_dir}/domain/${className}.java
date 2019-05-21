@@ -43,7 +43,7 @@ public class ${className}  implements java.io.Serializable{
 <#list table.columns as column>
 
     public void set${column.columnName}(${column.simpleJavaType} ${column.columnNameLower}) {
-        this.${column.columnNameLower} = value;
+        this.${column.columnNameLower} = ${column.columnNameLower};
     }
 
     public ${column.simpleJavaType} get${column.columnName}() {
